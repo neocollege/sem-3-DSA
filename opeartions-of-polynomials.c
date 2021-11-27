@@ -257,15 +257,14 @@ void main(){
     printf("The second polynomial is \n");
     print(head2);
 
-    printf("Enter the sign of the operation you want to perform.\n");
-    printf("+ for addition\n");
-    printf("- for subtraction\n");
-    printf("* for multiplication\n");
-
-    scanf(" %c",&ch);
-
     char c='y';
     while(c == 'y'){
+	printf("Enter the sign of the operation you want to perform.\n");
+        printf("+ for addition\n");
+        printf("- for subtraction\n");
+        printf("* for multiplication\n");
+
+        scanf(" %c",&ch);
         switch(ch){
         case '+': 
             add(head1,head2);
