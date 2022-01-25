@@ -188,7 +188,7 @@ void subtract(struct node* head1, struct node* head2){
         ptr1=ptr1->link;
     }
     while(ptr2!=NULL){
-        head3=insert_end_with_value(head3, ptr2->coefficient, ptr2->power);
+        head3=insert_end_with_value(head3, -ptr2->coefficient, ptr2->power);
         ptr2=ptr2->link;
     }
 
@@ -259,7 +259,7 @@ void main(){
 
     char c='y';
     while(c == 'y'){
-	printf("Enter the sign of the operation you want to perform.\n");
+        printf("Enter the sign of the operation you want to perform.\n");
         printf("+ for addition\n");
         printf("- for subtraction\n");
         printf("* for multiplication\n");
